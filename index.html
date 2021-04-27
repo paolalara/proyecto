@@ -1,0 +1,136 @@
+  
+<!DOCTYPE html>
+<html>
+<head>
+	<title>  Proyecto </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Venta de ropa</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.min.css">
+</head>
+<body>
+
+
+    <nav class="navbar navbar-dark bg-dark">
+        
+        <a class="navbar-brand" href="#">Ropa y Variedades Paola</a>
+    
+        </nav>
+        
+        <div class="container">
+            <div id="App" class="row pt-5">
+                <div class="col-md-5">
+                    <div class="card">
+                        <div class="card-header">
+                        <div class="card text-white bg-info mb-3" style="max-width: center;">
+                                
+                            <center>
+                            <h4>AGREGAR VENTA DE ROPA </h4>
+                            </center>
+                                       
+                        <form id="product-form" class="card-body">
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="NOMBRE DEL VENDEDOR " class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="NOMBRE DEL CLIENTE " class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="NOMBRE DEL ARTICULO " class="form-control">
+                            </div>
+    
+                            <div class="form-group">
+                                <input type="number" id="price" placeholder="PRECIO "
+                                    class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="CIUDAD " class="form-control">
+                            </div>
+    
+                            <div class="form-group">
+                                <input type="number" id= placeholder= "CELULAR"
+                                placeholder="" class="form-control">
+                                </div>
+    
+                              
+                                    <input type="submit" value="REGISTRAR " class="btn btn-warning btn-block">
+                        </form>
+                    </div>
+                </div>
+            </div>
+                <div id="product-list" class="col-md-8"></div>
+            </div>
+        </div>
+        
+        <div class="container my-5 text-center">
+    
+    
+              <select name="provincia" class="provincia btn btn-secondary" >
+                <option>Seleccione un pais</option>
+               </select>
+    
+    <!-- Datos meteorologicos -->
+    
+               <div style="display: grid; grid-template-columns: auto auto;">
+                    <div>
+                        Temperatura maxima:
+                    </div>
+                    <div id="temperaturaMaxima"></div>
+    
+                    <div>
+                        Temperatura minima:
+                    </div>
+                    <div id="temperaturaMinima"></div>
+    
+                    <div>
+                        Temperatura actual:
+                    </div>
+                    <div id="temperaturaActual"></div>
+    
+                    <div >
+                        Descripcion:
+                    </div>
+                    <div id="descripcion"></div>
+    
+                    <div>
+                        Pais:
+                    </div>
+                    <div  id="pais"></div>
+    
+    
+    
+    
+    
+                    </div>
+                    </div>
+    
+            
+    
+    
+    <!-- banddera y otros datos -->
+                <div class="mt-5" id="contenido">  
+               </div>
+    
+    
+    <!-- Maps -->
+    <div id="map"></div>
+ 
+                    
+        </div>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+     
+
+    
+<script src="script.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+</body>
+
+
+
+</html>
